@@ -16,7 +16,7 @@ class BitcoinTracker:
                 for row in reader:
                     row['quantity'] = float(row['quantity'])
                     row['price'] = float(row['price'])
-                    row['date'] = datetime.strptime(row['date'], '%Y-%m-%d')
+                    row['date'] = datetime.strptime(row['date'], '%Y-%m-%d' )
                     self.purchases.append(row)
         except FileNotFoundError:
             pass
