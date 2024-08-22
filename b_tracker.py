@@ -31,7 +31,7 @@ class BitcoinTracker:
             writer = csv.DictWriter(file, fieldnames=['quantity', 'price', 'date'])
             writer.writeheader()
             for purchase in self.purchases:
-                writer.writerow({'quantity': purchase['quantity'], 'price': purchase['price'], 'date': purchase['date'].strftime('%Y-%m-%d')})
+                writer.writerow({'quantity': purchase['quantity'], 'price': purchase['price'], 'date': purchase['date'].strftime('%Y-%m-%d``')})
 
     def total_bitcoin_purchased(self):
         return sum(purchase['quantity'] for purchase in self.purchases)
