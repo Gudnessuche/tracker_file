@@ -5,9 +5,14 @@ from forex_python.converter import CurrencyRates
 class BitcoinTracker:
     def __init__(self, csv_file):
         self.csv_file = csv_file
+        self.price(c_p)
         self.purchases = []
         self.load_purchases()
         self.currency_rates = CurrencyRates()
+
+    def price(self):
+        price = price = self.price()
+        if not price
 
     def load_purchases(self):
         try:
